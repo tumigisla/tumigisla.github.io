@@ -8,7 +8,6 @@ body {
 .container {
   max-width: 800px;
   margin: auto;
-  padding-top: 50px;
 }
 
 .avatar {
@@ -44,29 +43,24 @@ h1 {
   text-decoration: underline;
 }
 .posts {
-  margin: 20px 0; /* Reduced top and bottom margin for the post section */
+  margin: 20px auto; /* Center the posts and reduce top and bottom margin */
+  max-width: 600px; /* Adjust this width as needed to match your design */
+  text-align: center; /* Center the text of the posts */
 }
 
 .post {
-  display: flex; /* This will make the title and date align side by side */
-  align-items: center; /* Align items vertically */
-  justify-content: space-between; /* Put space between the title and date */
   margin-bottom: 15px; /* Adjusted for less space between posts */
 }
 
-.post h3,
-.post .post-date {
-  margin: 0; /* Remove margin from title and date */
-}
-
-.post h3 {
-  /* If you need additional styling for the post title, add here */
+.post-title-date {
+  display: inline-block; /* This will place the title and date on the same line */
+  margin: 0; /* Removes any default margin */
 }
 
 .post-date {
   color: #777;
   font-size: 0.8em;
-  /* Removed the top margin as it's no longer necessary */
+  margin-left: 10px; /* Add space between the title and the date */
 }
 
 .footer {
