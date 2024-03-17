@@ -1,1 +1,0 @@
-# tumigisla.github.io
