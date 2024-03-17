@@ -43,23 +43,38 @@ h1 {
 .social-links a:hover {
   text-decoration: underline;
 }
-
 .posts {
-  margin: 40px 0;
+  margin: 20px 0; /* Reduced top and bottom margin for the post section */
 }
 
 .post {
-  margin-bottom: 20px;
+  display: flex; /* This will make the title and date align side by side */
+  align-items: center; /* Align items vertically */
+  justify-content: space-between; /* Put space between the title and date */
+  margin-bottom: 15px; /* Adjusted for less space between posts */
+}
+
+.post h3,
+.post .post-date {
+  margin: 0; /* Remove margin from title and date */
+}
+
+.post h3 {
+  /* If you need additional styling for the post title, add here */
 }
 
 .post-date {
   color: #777;
   font-size: 0.8em;
-  margin-top: 5px;
+  /* Removed the top margin as it's no longer necessary */
 }
 
 .footer {
   font-size: 0.8em;
   color: #777;
   margin-top: 100px;
+}
+
+header, .container h1 {
+  margin-bottom: 10px; /* Reduce this value to the desired space */
 }
