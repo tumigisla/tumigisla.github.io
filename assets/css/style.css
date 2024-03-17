@@ -12,8 +12,8 @@ body {
 }
 
 .avatar {
-  width: 150px;
-  height: 150px;
+  width: 100px; /* Adjust the size as you wish */
+  height: 100px; /* Adjust the size as you wish */
   border-radius: 50%;
   margin: 20px auto;
   display: block;

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>{{ page.title | default: site.title, "Default Title" }}</title>
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <link rel="icon" type="image/png" href="{{ '/assets/favicon.ico' | relative_url }}">
+  <!-- Add any additional head elements here -->
+</head>
+<body>
+  <header>
+    <div class="container">
+      <img src="{{ '/assets/avatar/4990.png' | relative_url }}" alt="Avatar" class="avatar">
+      <h1>{{ site.title }}</h1>
+      <p>{{ site.description }}</p>
+    </div>
+  </header>
+
+  <main class="container">
+    {{ content }}
+  </main>
+
+  <footer>
+    <div class="container">
+      <!-- Optional: Add footer content here -->
+      <p>© {{ 'now' | date: "%Y" }} {{ site.title }}. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Optional: Include JavaScript files here -->
+  <!-- <script src="{{ '/path-to-your-javascript.js' | relative_url }}"></script> -->
+</body>
+</html>
