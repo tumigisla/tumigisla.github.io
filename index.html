@@ -3,7 +3,6 @@ layout: default
 ---
 
 <div class="container">
-  <img src="{{ '/assets/avatar/4990.png' | relative_url }}" alt="Avatar" class="avatar">
   
   <!-- Social Links -->
   <ul class="social-links">
@@ -17,6 +16,7 @@ layout: default
     <h2>Posts</h2>
     {% for post in site.posts %}
     <article class="post">
+      <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
       <p class="post-date">{{ post.date | date: "%B %d, %Y" }}</p>
     </article>
     {% endfor %}
