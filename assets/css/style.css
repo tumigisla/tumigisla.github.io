@@ -62,6 +62,11 @@ h1 {
   font-size: 0.8em;
   margin-left: 10px; /* Add space between the title and the date */
 }
+
+.post-content {
+  text-align: left;
+}
+
 .footer {
   font-size: 0.8em;
   color: #777;
