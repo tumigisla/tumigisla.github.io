@@ -2,3 +2,5 @@
 .local/
 .replit
 replit.nix
+.bundle/
+vendor/
