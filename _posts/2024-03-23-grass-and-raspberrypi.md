@@ -32,5 +32,5 @@ If I turn off my laptop, close the lid, or put it in sleep mode, I don’t earn 
 
 I have a couple of Raspberry Pi 3 laying around doing nothing, so I booted one and installed the [Grass VPS App](https://github.com/alafon/grass-vps) on there. Since doing that on March 17th, my earnings are stable. Even when I’m away from home, travelling, touching grass, the Raspberry Pi makes sure to always have Grass connected.
 
-![Grass Reward Dashboard](/assets/images/grass-reward-dashboard.jpg)
+![Grass Reward Dashboard](/assets/images/grass-reward-dashboard.png)
 *Image: Grass Reward Dashboard showing the author's earnings*
