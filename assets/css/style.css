@@ -76,3 +76,7 @@ h1 {
 header, .container h1 {
   margin-bottom: 10px; /* Reduce this value to the desired space */
 }
+
+img {
+  width: 800px;
+}
