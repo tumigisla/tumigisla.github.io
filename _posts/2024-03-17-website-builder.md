@@ -32,7 +32,7 @@ This is the option I ended up using because it’s the environment I’m most us
 
 The workflow of updating the page or adding a new blog post is really straight forward and something I am heavily used to: create a pull request and merge it, that’s it. An out of the box GitHub Action takes care of publishing the new content to your webpage in under a minute.
 
-Here is the GitHub repo: https://github.com/tumigisla/tumigisla.github.io
+Here is the GitHub repo: [https://github.com/tumigisla/tumigisla.github.io](https://github.com/tumigisla/tumigisla.github.io)
 
 ## Conclusion
 

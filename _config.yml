@@ -12,9 +12,13 @@ theme: minima
 plugins:
   - jekyll-sitemap
   - jekyll-feed
+  - jekyll-site-tree
 avatar: /assets/images/4990.jpg
 social_links:
   github: https://github.com/tumigisla
   farcaster: https://warpcast.com/tgislason
+  x: https://twitter.com/tgislasonX
+  telegram: https:/t.me/tgislason
+  linkedin: https://www.linkedin.com/in/tumisnaer/
 title: Tumi Snær Gíslason
 description: "Hi, I’m Tumi. I wear many hats and will write about all kinds of things in here. The joy of being."
