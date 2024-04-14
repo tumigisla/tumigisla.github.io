@@ -34,3 +34,7 @@ I have a couple of Raspberry Pi 3 laying around doing nothing, so I booted one a
 
 ![Grass Reward Dashboard](/assets/images/grass-reward-dashboard.png)
 *Image: Grass Reward Dashboard showing the author's earnings*
+
+## Update 2024-04-14
+
+Using the Grass VPS in Raspberry Pi stopped working after an update issued by Grass. Their support team told me that using the VPS package is not supported anymore. So, I've fallbacked to using Raspberry Pi in desktop mode, with the Grass chrome extension running on Chromium there. I set it up using a VNC connection. This works well, and is stable.
