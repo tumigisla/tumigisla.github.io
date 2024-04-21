@@ -38,3 +38,32 @@ I have a couple of Raspberry Pi 3 laying around doing nothing, so I booted one a
 ## Update 2024-04-14
 
 Using the Grass VPS in Raspberry Pi stopped working after an update issued by Grass. Their support team told me that using the VPS package is not supported anymore. So, I've fallbacked to using Raspberry Pi in desktop mode, with the Grass chrome extension running on Chromium there. I set it up using a VNC connection. This works well, and is stable.
+
+## Update 2024-04-21
+
+My raspberry pi rebooted for some reason and didn't resume with an open Chromium window farming Grass points. So, I added really a simple health check, as suggested by ChatGPT:
+1. Sign up for healthchecks.io
+2. On raspberry pi
+    1. `sudo apt-get install wmctrl`
+    2. `nano /home/tumi/check_chromium_and_ping.sh` and add script below
+    3. `crontab -e`
+    4. `0 * * * * /home/tumi/check_chromium_and_ping.sh`
+    5. `crontab -l` to check for crontab config
+
+    ```jsx
+    #!/bin/bash
+
+    # Set DISPLAY variable
+    export DISPLAY=:0
+
+    # Check for Chromium windows
+    if wmctrl -l | grep -i chromium; then
+        # Chromium is running, perform the ping
+        curl -fsS --retry 3 https://hc-ping.com/<my healthchecks.io key> >/dev/null 2>&1
+    else
+        echo "No Chromium window is open."
+    fi
+    ```
+
+3. On healthchecks.io, create a telegram integration
+4. Done
