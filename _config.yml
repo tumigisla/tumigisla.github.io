@@ -13,11 +13,9 @@ plugins:
   - jekyll-sitemap
   - jekyll-feed
   - jekyll-site-tree
-avatar: /assets/images/4990.jpg
+avatar: /assets/avatar/my-avatar.png
 social_links:
   github: https://github.com/tumigisla
-  farcaster: https://warpcast.com/tgislason
-  x: https://twitter.com/tgislasonX
   telegram: https://t.me/tgislason
   linkedin: https://www.linkedin.com/in/tumisnaer/
 title: Tumi Snær Gíslason
